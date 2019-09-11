@@ -1,0 +1,44 @@
+header, footer {
+  background-color: #3C474E;
+  color: #E0F0FE;
+}
+
+header h1 {
+  font-style: italic;
+  text-align: center;
+}
+
+header p {
+  text-align: left;
+  border-bottom: 1px solid black;
+}
+
+nav {
+  background-color: lightgray;
+    border-top: thin black solid;
+    border-bottom: thin black solid;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+nav a:link, span:link {
+  background-color: #3C474E;
+  color: #E0F0FE;
+  border: thin solid #0d1f2d;
+  text-decoration: underline;
+  display: block;
+  margin-right: 5px;
+  margin-left: 5px;
+
+}
+
+
+a:visited, span:visited {
+  color: #e4c3ad;
+}
+a:active, span:active {
+  text-decoration: none;
+}
+a:hover, span:hover {
+  font-weight: bold;
+}

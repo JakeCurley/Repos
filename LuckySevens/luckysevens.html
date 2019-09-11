@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <header>
+      <title>Lucky Sevens</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+      <script type="text/javascript" src="scripts/luckysevens.js"></script>
+      <h1>Lucky Sevens</h1>
+      <style>
+        h1 {
+          text-align:center;
+        }
+      </style>
+    </header>
+
+  </head>
+
+  <body onload="startingMoney()">
+    <div class="container.fluid">
+      <form name="Bet">
+        <div class="row justify-content-center">
+          <div class="col table-responsive">
+            <table style="margin:auto;">
+              <tbody>
+                <tr>
+                  <td><h4>Starting Bet: <h4></td>
+                  <td style="border: 2px solid black;" ><h4>$<span id="startingBet"></span>.00</h4></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="row justify-content-center" style="margin-top:10px;">
+          <div class="col-1">
+            <button onclick="rollDice()" type="button" id="playButton" class="btn">Play</button>
+          </div>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="col" id="results" style="display:none;">
+            <h1>Results</h1>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-4 table-responsive">
+            <table id="dice" class="table table-striped" style="display:none;">
+              <tbody>
+                <tr>
+                  <td>Starting Bet</td>
+                  <td>$<span id="startBet"></span>.00</td>
+                </tr>
+                <tr>
+                  <td>Totals Rolls Before Going Broke</td>
+                  <td><span id="rolls"></span></td>
+                </tr>
+                <tr>
+                  <td>Highest Amount Won</td>
+                  <td>$<span id="max"></span>.00</td>
+                </tr>
+                <tr>
+                  <td>Roll Count at Highest Amount Won</td>
+                  <td><span id="highestRoll"></span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+          <div class="row justify-content-center">
+            <div class="col-sm-1">
+              <button onclick="playAgain()" type="button" id="replayButton" class="btn" style="display:none;">Play again</button>
+            </div>
+          </div>
+        </div>
+    </form>
+  </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+
+</html>

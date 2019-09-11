@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script type="text/JavaScript" src="scripts/restaurant.js"></script>
+    <noscript>This website uses Javascript.  Please enable Javascript for best results.</noscript>
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="open-iconic-master/font/css/open-iconic-bootstrap.css" rel="stylesheet">
+    <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+    <style>
+      body {
+        background-color: #E3E4E1;
+      }
+      label {
+        font-weight: bold;
+      }
+      label #additional {
+        font-weight: normal;
+      }
+      p {
+        text-align: center;
+        margin: 0px;
+      }
+      form {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+    </style>
+    <header>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <p>Contact Us</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <h1>Speak's Grill</h1>
+          </div>
+        </div>
+      </div>
+    </header>
+
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <nav class="nav nav-pills flex-sm-row">
+          <a class="flex-sm-fill text-sm-center nav-item nav-link btn btn-badge-pill col-sm-2 col-lg-1" href="index.html"><span class="oi oi-home"> Home</span></a>
+          <a class="flex-sm-fill text-sm-center nav-item nav-link btn btn-badge-pill col-sm-2 col-lg-1" href="menu.html">Menu</a>
+          <a class="flex-sm-fill text-sm-center nav-item nav-link btn btn-badge-pill col-sm-2 col-lg-1" href="contact.html">Contact</a>
+      </nav>
+      <form name="info" onsubmit="return validateInfo();">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="form-group form-inline col-7 justify-content-end">
+              <label for="name">Name: </label>
+              <input type="text" class="form-control" id="name" style="width:30%">
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group form-inline col-7 justify-content-end">
+              <label for="email">Email: </label>
+              <input type="email" class="form-control" id="email" style="width:30%">
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group form-inline col-7 justify-content-end">
+              <label for="phone">Phone: </label>
+              <input type="number" class="form-control" id="phone" style="width:30%">
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group form-inline col-7 justify-content-end">
+              <label for="inquiry">Reason for inquiry: </label>
+              <select class="form-control" id="inquiry" style="width:30%">
+                <option>Catering</option>
+                <option>Private Party</option>
+                <option>Feedback</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group form-inline col-7 justify-content-end">
+              <label for="additional" style="font-weight:normal">Additional Information: </label>
+              <textarea class="form-control" id="additional" style="width:30%"></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-5 text-right">
+              <label>Have you been to the restaurant?</label>
+            </div>
+            <div class="col-3">
+              <div class="form-check form-check-inline justify-content-start">
+                <input class="form-check-input" type="radio" name="options" id="no" value="no">
+                <label class="form-check-label" for="inlineRadio1">No</label>
+              </div>
+              <div class="form-check form-check-inline justify-content-start">
+                <input class="form-check-input" type="radio" name="options" id="yes" value="yes">
+                <label class="form-check-label" for="inlineRadio1">Yes</label>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-5 text-right">
+              <label>Best days to contact you: </label>
+            </div>
+            <div class="col-3">
+              <div class="form-check form-check-inline col-sm-2 col-lg-1 justify-content-center">
+                <input class="form-check-input" type="checkbox" id="M" value="option1">
+                <label class="form-check-label" for="M">M</label>
+              </div>
+              <div class="form-check form-check-inline col-sm-2 col-lg-1 justify-content-center">
+                <input class="form-check-input" type="checkbox" id="T" value="option1">
+                <label class="form-check-label" for="T">T</label>
+              </div>
+              <div class="form-check form-check-inline col-sm-2 col-lg-1 justify-content-center">
+                <input class="form-check-input" type="checkbox" id="W" value="option1">
+                <label class="form-check-label" for="W">W</label>
+              </div>
+              <div class="form-check form-check-inline col-sm-2 col-lg-1 justify-content-center">
+                <input class="form-check-input" type="checkbox" id="Th" value="option1">
+                <label class="form-check-label" for="Th">Th</label>
+              </div>
+              <div class="form-check form-check-inline col-sm-2 col-lg-1 justify-content-center">
+                <input class="form-check-input" type="checkbox" id="F" value="option1">
+                <label class="form-check-label" for="F">F</label>
+              </div>
+            </div>
+          </div>
+            <div class="row">
+              <div class="col">
+                <p>*Sections in bold are required to sumbit.</p>
+              </div>
+            </div>
+            <div class="row" style="margin-top:5px;">
+              <div class="col text-center">
+                <button type="submit" id="submitButton" class="btn btn-dark" onclick="return validateInfo();">Send Request</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+      <footer>
+        <p>1234 Street, FakeTown, Minnesota, 50999</p>
+        <p>Phone Number: 123-123-1234</p>
+      </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+
+</html>
