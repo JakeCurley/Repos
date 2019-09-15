@@ -59,5 +59,6 @@ function rollDice() {
 function playAgain() {
   document.getElementById("replayButton").style.display = "none";
   document.getElementById("dice").style.display = "none";
+  document.getElementById("results").style.display = "none";
   startingMoney();
 }
